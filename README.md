@@ -12,6 +12,7 @@ The files for this container can be found at my [GitHub repo](https://github.com
 
 ## Push Image Remotely
 `docker tag syncthing-relay-bluemix:latest registry.ng.bluemix.net/<repository>/syncthing-relay-bluemix:latest`
+
 `docker push registry.ng.bluemix.net/<repository>/syncthing-relay-bluemix:latest`
 
 
@@ -25,4 +26,5 @@ The files for this container can be found at my [GitHub repo](https://github.com
 
 ## Upload local certificates to volume
 `bluemix ic cp ./cert.pem <containerid>:/home/relaysrv/certs`
+
 `bluemix ic cp ./key.pem <containerid>:/home/relaysrv/certs`
